@@ -1,6 +1,10 @@
 body {
     background-color: #D7BEA8;
 }
-h1.main-heading {
-    color: #04030F ; 
+img {
+    border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+  transform: rotate(90deg);
 }
