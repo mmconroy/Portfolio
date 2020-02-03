@@ -1,10 +1,44 @@
 body {
-    background-color: #D7BEA8;
+    background-color: #ffffff;
 }
 img {
-    border: 1px solid #ddd;
+    border: 1px solid black;
   border-radius: 4px;
-  padding: 5px;
+  padding: 0px;
+  margin: 8px;
   width: 150px;
   transform: rotate(90deg);
+  box-shadow: 2px 5px #aaaaaa;
+}
+.tagline{
+    font-style: italic;
+    font-size: medium;
+}
+
+.body-text{
+    font-size: medium;
+    text-align: justify;
+}
+.linkedin-link{
+    text-decoration: none;
+    font-weight: bold;
+    color: blue
+}
+.ux-folio-link{
+    text-decoration: none;
+    font-weight: bold;
+    color: blue
+}
+
+.email-link{
+    text-decoration: none;
+    font-weight: bold;
+    color: blue
+}
+
+.case-studies{
+    text-decoration: underline;
+}
+.no-line-break{
+    margin: 0px;
 }
