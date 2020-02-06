@@ -8,6 +8,7 @@ div p{
 
 h1{
     margin: 0px;
+    font-family: 'Roboto Slab', serif;
 }
 .profile-pic {
   border: 1px solid black;
@@ -24,11 +25,12 @@ h1{
 
 .list{
     list-style-type:none; 
-    display:-webkit-inline-flex; 
+    display:-webkit-inline-flex;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .no-padding{
-    padding="0px";
+    padding: "0px";
 }
 
 img{
