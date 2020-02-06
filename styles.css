@@ -1,6 +1,14 @@
 body {
     background-color: #e6e6e6;
 }
+
+div p{
+    font-style: italic;
+}
+
+h1{
+    margin: 0px;
+}
 .profile-pic {
   border: 1px solid black;
   border-radius: 4px;
@@ -11,8 +19,20 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
+.tagline{
+    font-weight: bold;
+}
+
+.list{
+    list-style-type:none; 
+    display:-webkit-inline-flex; 
+    padding: 0px 0px 0px 0px;"
+}
+
+img{
+    width: 100%;
+}
 .card {
-    /* Add shadows to create the "card" effect */
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     background-color:white;
     margin: 4px;
