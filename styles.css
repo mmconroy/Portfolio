@@ -12,7 +12,6 @@ h1{
 .profile-pic {
   border: 1px solid black;
   border-radius: 4px;
-  padding: 0px;
   margin: 48px;
   width: 250px;
   transform: rotate(90deg);
@@ -26,20 +25,23 @@ h1{
 .list{
     list-style-type:none; 
     display:-webkit-inline-flex; 
-    padding: 0px 0px 0px 0px;"
+}
+
+.no-padding{
+    padding="0px";
 }
 
 img{
     width: 100%;
 }
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
     background-color:white;
     margin: 4px;
     width: 200px;
     height: 200px;
   } 
-  /* Add some padding inside the card container */
+  
   .container {
     padding: 2px 16px;
   }
