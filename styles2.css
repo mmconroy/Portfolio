@@ -1,0 +1,102 @@
+.menu {
+  font-size: 48px;
+  font-weight: 600;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+  border-radius: 4px 4px 4px 4px;
+  margin-right: 16px;
+  background-color: #c0c0c0;
+}
+
+.sidebar {
+  margin-top: 24px;
+  margin-right: 8px;
+  font-weight: bold;
+  float: left;
+  text-align: center;
+  width: 200px;
+  height: auto;
+  background-color: #F09A9D;    /* Red */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+  border-radius: 4px 4px 4px 
+}
+
+.content {
+  float: left;
+  width: 650px;
+  height: auto;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 200;
+  text-emphasis: none;
+  text-align: lefts;
+  color: black;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+  border-radius: 0px;
+}
+
+.footer {
+  height: 200px;
+  background-color: #c0c0c0;;    /* Light blue */
+  clear: both;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+  border-radius: 0px;
+
+}
+
+.page {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .container {
+    overflow: hidden;
+    background-color: #00000
+  }
+
+  .column {
+    float: right;
+    color: white;
+    width: 33%;
+    height: auto;
+    margin: 20px 1.15%;
+    background-color: rgb(34, 36, 39);    /* Medium blue */
+  }
+
+  .content {
+    padding: 20px;
+  }
+  
+  img{
+    float: right;
+    width: 300px;
+    height: 200px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    margin-bottom: 20px;
+  }
+
+  .avatar {
+    float: left;
+    width: 60px;
+    height: 60px;
+    margin: 25px;
+    border-radius: 40px;
+    background-color: #D6E9FE;
+  }
+  
+  .username {
+    /* margin-top: 30px; */
+  }
+  
+  .comment {
+    margin: 10px;
+    overflow: hidden;
+  }
+
+  .blog{
+      text-align: center;
+      font-weight: 200;
+  }
