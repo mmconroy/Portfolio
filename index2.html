@@ -12,21 +12,23 @@
     rel="stylesheet"/>
 
   <nav class="menu-container">
-    <div class="design">
-      <p class="menu-button">Design</p>
-    </div>
+<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <div class="coding">
-      <p class="menu-button">Engingeering</p>
-    </div>
-
-    <div class="resume">
-      <p class="menu-button">Resume</p>
-    </div>
-
-    <div class="about">
-      <p class="menu-button">About</p>
-    </div>
+<!-- Top Navigation Menu -->
+<div class="topnav">
+  <a href="#home" class="active">Logo</a>
+  <!-- Navigation links (hidden by default) -->
+  <div id="myLinks">
+    <a href="#news">News</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+  </div>
+  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
   </nav>
 
   <body>
@@ -35,9 +37,10 @@
         <p class="target">Hey, I'm Matt.</p>
 
         <p class="target-2">
-          I'm an empithetic UX Engineer who's passionate about people and solving problems. I'm
+          I am passionate about people and creating UX that solves problems. I'm
           excited to grow as a thought-leader and am wired to be a problem
-          solver. I enjoy connecting with people, organizations, and projects
+          solver. I'm resilient, empathetic, and will never back down from a
+          challenge. I enjoy connecting with people, organizations, and projects
           that value honesty, thought, and flexibility.
         </p>
         <p></p>
