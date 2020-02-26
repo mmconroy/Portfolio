@@ -16,14 +16,103 @@ body {
   align-items: center;
 }
 
+header {
+  background-color: darkgrey;
+  height: 3.5rem;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+
+header > h1 {
+  color: white;
+  font-family: "Roboto";
+}
+
+.nav-toggle {
+  display: none;
+}
+nav {
+  width: 8rem;
+  height: fit-content;
+  /* position: absolute; */
+  text-align: left;
+  top: 100%;
+  left: 0;
+  background: white;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  display: none;
+}
+
+nav ul {
+  margin-bottom: 4px;
+  padding: 8px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+nav li {
+  font-family: "Roboto";
+  margin: 8px;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.2rem;
+  text-decoration: uppercase;
+}
+
+.nav-toggle:checked ~ nav {
+  display: block;
+}
+
+.nav-toggle-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  display: block;
+  height: 2px;
+  width: 2em;
+  background: black;
+  border-radius: 2px;
+  position: relative;
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  content: "";
+  position: absolute;
+}
+
+.nav-toggle-label span::before {
+  bottom: 9px;
+}
+
+.nav-toggle-label span::after {
+  top: 9px;
+}
+
 .screen-wrapper {
   text-align: center;
   background-color: #f6f7f8;
   border: 1px solid #d6d9dc;
   border-radius: 3px;
-  width: 80%;
-  margin: 20px 0;
-  padding: 40px;
+  width: fit-content;
+  margin: 48px 0px 0px 0px;
+  padding: 48px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -118,31 +207,57 @@ body {
 }
 
 @media (min-width: 599px) {
-  .screen-wrapper,
-  .card-wrapper {
+  header {
     display: flex;
-    flex-direction: column;
-    width: fit-content;
+    justify-content: center;
   }
 
-  .form-wrapper {
-    width: fit-content;
-    flex-direction: row;
-    justify-content: center;
+  .nav-toggle-label {
+    display: none;
+  }
+
+  nav {
+    width: 100%;
+    height: min-content;
+    display: inline-block;
+  }
+
+
+  nav ul{
+    display: flex;
+  }
+
+  ul {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
     align-items: center;
-    margin-bottom: 20px;
   }
-  .form-wrapper input[type="text"] {
-    width: 250px;
-    height: initial;
-  }
-  .form-wrapper label {
-    text-align: right;
-    width: 120px;
-    margin-top: 7px;
-  }
-  .contact-row .instructions,
-  .contact-row button {
-    margin-left: 120px;
-  }
+
+.screen-wrapper,
+.card-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+}
+
+.form-wrapper {
+  width: fit-content;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.form-wrapper input[type="text"] {
+  width: 250px;
+  height: initial;
+}
+.form-wrapper label {
+  text-align: right;
+  width: 120px;
+  margin-top: 7px;
+}
+.contact-row .instructions,
+.contact-row button {
+  margin-left: 120px;
 }
