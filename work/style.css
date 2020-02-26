@@ -221,6 +221,9 @@ a {
     height: 10vh;
     overflow: hidden;
   }
+/* You may want to consider playing around with your card-text in this querie
+because at certain heights the text overflows the container in these screen sizes. */
+
 }
 
 @media (min-width: 1050px) {
