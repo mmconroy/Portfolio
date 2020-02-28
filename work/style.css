@@ -1,38 +1,53 @@
 @font-face {
-  font-family: "open_sansregular";
-  src: url("OpenSans-Regular-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-html {
-  margin: 0;
-  padding: 0;
-  font-size: 1rem;
+  font-family: "New York";
+  src: url("./NewYorkMedium-Medium.otf");
 }
 
-body * {
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("./SF-Pro-Display-Medium.otf");
+}
+
+*,
+*::before,
+*::after {
+  margin: 0px;
   box-sizing: border-box;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+body {
+  color: #000000;
+  background-color: white;
+  font-family: "SF Pro Display";
+  font-size: 16px;
+  line-height: 1.3;
+  display: flex;
+  margin-top: 0px;
+  flex-direction: column;
+  align-items: center;
 }
 
 header {
-  background-color: darkgrey;
-  height: 3.5rem;
-  text-align: center;
-  position: fixed;
+  background-color: white;
   width: 100%;
+  height: 3.5rem;
+  justify-content: center;
+  text-align: right;
+  position: sticky;
   z-index: 999;
 }
 
 header > h1 {
-  color: white;
-  font-family: "Roboto";
+  font-family: "SF Pro Display";
+  font-size: 18px;
+  position: absolute;
+  right: 24px;
+  top: 18px;
 }
 
 .nav-toggle {
   display: none;
 }
+
 nav {
   width: 8rem;
   height: fit-content;
@@ -41,7 +56,7 @@ nav {
   top: 100%;
   left: 0;
   background: white;
-  border-left: 1px solid black;
+  border-top: 1px solid black;
   border-right: 1px solid black;
   border-bottom: 1px solid black;
   display: none;
@@ -51,10 +66,12 @@ nav ul {
   margin-bottom: 4px;
   padding: 8px;
   list-style: none;
+  display: flex;
+  flex-direction: column;
 }
 
 nav li {
-  font-family: "Roboto";
+  font-family: "SF Pro Display";
   margin: 8px;
 }
 
@@ -72,7 +89,7 @@ nav a {
 .nav-toggle-label {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 24px;
   height: 100%;
   display: flex;
   align-items: center;
@@ -170,29 +187,51 @@ a {
   padding: 3px;
 }
 
-@media (min-width: 400px) {
+@media (min-width: 599px) and (max-width:1049px) {
   .nav-toggle-label {
     display: none;
   }
   nav {
+    color: darkgrey;
+    padding: 0px;
     display: flex;
-    justify-content: flex-end;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    height: 56px;
+    border: none;
+    display: inline-block;
   }
-  li {
-    margin-right: 10px;
+
+  header > h1 {
+    color: #6d6d6d;
   }
+
   ul {
-    width: 50%;
     display: flex;
-    justify-content: space-between;
+    color: darkgrey;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 56px;
   }
 
-  header {
-    display: flex;
+  li > a {
+    color: black;
   }
-}
 
-@media (min-width: 600px) and (max-width: 1049px) {
+  li > a:hover {
+    color: white;
+    background-color: black;
+  }
+
+  .content {
+    height: 40vh;
+    padding: 1rem;
+  }
+
   .card-container {
     display: flex;
     flex-direction: row;
@@ -227,8 +266,53 @@ because at certain heights the text overflows the container in these screen size
 }
 
 @media (min-width: 1050px) {
+    .nav-toggle-label {
+      display: none;
+    }
+  
+    nav {
+      color: darkgrey;
+      padding: 0px;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      width: 100%;
+      height: 56px;
+      border: none;
+      display: inline-block;
+    }
+  
+    header > h1 {
+      color: #6d6d6d;
+    }
+  
+    ul {
+      display: flex;
+      color: darkgrey;
+      width: 100%;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      align-items: center;
+      width: 100%;
+      height: 56px;
+    }
+  
+    li > a {
+      color: black;
+    }
+  
+    li > a:hover {
+      color: white;
+      background-color: black;
+    }
+  
+    .content {
+      height: 40vh;
+      padding: 1rem;
+    }
+  }
+  
   html {
-    /* width: 1000px; */
     height: auto;
     margin: 0px;
   }
