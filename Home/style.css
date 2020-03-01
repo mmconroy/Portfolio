@@ -179,6 +179,10 @@ a > img {
     color: #6d6d6d;
   }
 
+  header {
+    height: 0px;
+  }
+
   ul {
     display: flex;
     color: darkgrey;
