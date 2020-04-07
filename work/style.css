@@ -1,11 +1,11 @@
 @font-face {
   font-family: "New York";
-  src: url("./NewYorkMedium-Medium.otf");
+  src: url("/assets/font/NewYorkMedium-Medium.otf");
 }
 
 @font-face {
   font-family: "SF Pro Display";
-  src: url("./SF-Pro-Display-Medium.otf");
+  src: url("/assets/font/SF-Pro-Display-Medium.otf");
 }
 
 *,
