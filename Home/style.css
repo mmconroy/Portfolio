@@ -159,6 +159,7 @@ footer {
 }
 
 a > img {
+  justify-self: center;
   width: 28px;
   height: 28px;
   padding: 2px;

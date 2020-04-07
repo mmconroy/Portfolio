@@ -140,7 +140,7 @@ nav a {
   background-color: #ffffff;
   /* border: 1px solid #d6d9dc; */
   border-radius: 3px;
-  width: 100%
+  width: 100%;
   margin: 56px 0px 4px 4px;
   padding: 48px;
   /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
@@ -148,6 +148,7 @@ nav a {
 
 .screen-wrapper h1 {
   font-size: 30px;
+  margin-top: 5rem;
   margin-bottom: 16px;
   font-family: "SF Pro Display";
 }
@@ -183,7 +184,6 @@ nav a {
   font-size: 14px;
 }
 
-
 .form-wapper label {
   margin-bottom: 15px;
 }
@@ -215,7 +215,7 @@ nav a {
   padding-bottom: 8px;
 }
 
-.field{
+.field {
   padding-top: 8px;
   padding-bottom: 8px;
 }
@@ -247,7 +247,7 @@ nav a {
   cursor: pointer;
 }
 
-#comments{
+#comments {
   font-family: "SF Pro Display";
   font-size: 16px;
 }
