@@ -149,12 +149,19 @@ nav a {
   padding: 1rem;
 }
 
-a > img {
+footer {
+  display: flex;
+  width: 100%;
+  height: 48px;
   position: absolute;
   top: 90%;
   left: 50%;
-  width: 48px;
-  height: 48px;
+}
+
+a > img {
+  width: 28px;
+  height: 28px;
+  padding: 2px;
   object-fit: contain;
 }
 
@@ -206,5 +213,12 @@ a > img {
   .content {
     height: 40vh;
     padding: 1rem;
+  }
+
+  a > img {
+    width: 64px;
+    height: 64px;
+    padding: 8px;
+    object-fit: contain;
   }
 }

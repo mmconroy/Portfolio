@@ -17,7 +17,7 @@
 
 body {
   color: #000000;
-  background-color: #eaedf0;
+  background-color: #ffffff;
   font-family: "SF Pro Display";
   font-size: 16px;
   line-height: 1.3;
@@ -137,13 +137,13 @@ nav a {
 
 .screen-wrapper {
   text-align: center;
-  background-color: #f6f7f8;
-  border: 1px solid #d6d9dc;
+  background-color: #ffffff;
+  /* border: 1px solid #d6d9dc; */
   border-radius: 3px;
-  width: fit-content;
+  width: 100%
   margin: 56px 0px 4px 4px;
   padding: 48px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
 }
 
 .screen-wrapper h1 {
@@ -154,19 +154,20 @@ nav a {
 
 .card-wrapper {
   font-family: "New York";
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .form-wrapper {
   margin-bottom: 56px;
+  background: #ffffff;
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
   flex-wrap: wrap;
-  border: 1px solid #d6d9dc;
+  /* border: 1px solid #d6d9dc; */
   width: 80%;
   align-items: center;
-  padding: 8px;
+  padding: 16px;
 }
 
 .form-wrapper input[type="text"],
@@ -177,10 +178,11 @@ nav a {
   border: 1px solid #d6d9dc;
   border-radius: 3px;
   width: 100%;
-  padding: 6px;
+  padding: 8px;
   margin: 4px;
   font-size: 14px;
 }
+
 
 .form-wapper label {
   margin-bottom: 15px;
@@ -209,6 +211,13 @@ nav a {
 .contact-row {
   width: 100%;
   align-items: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.field{
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 
 .contact-row textarea {
@@ -229,13 +238,18 @@ nav a {
   align-items: center;
   font-family: "SF Pro Display";
   font-size: 16px;
-  font-weight: bold;
+  /* font-weight: bold; */
   color: #ffffff;
-  background-color: #585858;
+  background-color: #000000;
   border: none;
   border-radius: 0.5rem;
   padding: 10px;
   cursor: pointer;
+}
+
+#comments{
+  font-family: "SF Pro Display";
+  font-size: 16px;
 }
 
 .contact-row button:hover {
@@ -312,10 +326,7 @@ nav a {
     align-items: center;
     margin-bottom: 20px;
   }
-  .form-wrapper input[type="text"] {
-    width: 250px;
-    height: initial;
-  }
+
   .form-wrapper label {
     text-align: right;
     width: 120px;
